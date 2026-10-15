@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boymurodov Ibrohimbek — Ilmiy Maqolalar va Guvohnomalar Portali</title>
+  <meta name="description" content="Boymurodov Ibrohimbek Iskandar o‘g’lining ilmiy maqolalari, tezislari va DGU mualliflik guvohnomalari rasmiy onlayn portali.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="bg-ambient">
+    <div class="glow-orb glow-1"></div>
+    <div class="glow-orb glow-2"></div>
+    <div class="glow-orb glow-3"></div>
+  </div>
+
+  <!-- Top Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrapper">
+        <div class="logo-icon">IB</div>
+        <div class="logo-text">
+          <h1>Ibrohimbek Boymurodov</h1>
+          <span>Ilmiy Maqolalar Portali</span>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" title="Mavzuni almashtirish">
+          <svg id="theme-icon" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <span class="theme-text">Rejim</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-pill">
+        <span>⚡ Rasmiy Onlayn Repozitoriy</span>
+      </div>
+      <h2 class="hero-title">Ilmiy Nashrlar va Mualliflik Guvohnomalari</h2>
+      <p class="hero-subtitle">
+        Nizomiy nomidagi Toshkent Davlat Pedagogika Universiteti magistranti Boymurodov Ibrohimbek Iskandar o‘g’lining ilmiy maqolalari, xalqaro tezislari va DGU dasturiy guvohnomalari to‘plami.
+      </p>
+
+      <!-- Stats Bar -->
+      <div class="stats-row">
+        <div class="stat-chip">
+          <div class="stat-icon">📄</div>
+          <div class="stat-info">
+            <div class="stat-num">5 ta</div>
+            <div class="stat-label">Nashr va Hujjat</div>
+          </div>
+        </div>
+        <div class="stat-chip">
+          <div class="stat-icon">🏛️</div>
+          <div class="stat-info">
+            <div class="stat-num">1 ta</div>
+            <div class="stat-label">DGU Guvohnoma</div>
+          </div>
+        </div>
+        <div class="stat-chip">
+          <div class="stat-icon">🌐</div>
+          <div class="stat-info">
+            <div class="stat-num">1 ta</div>
+            <div class="stat-label">Xalqaro Tezis</div>
+          </div>
+        </div>
+        <div class="stat-chip">
+          <div class="stat-icon">📚</div>
+          <div class="stat-info">
+            <div class="stat-num">2 ta</div>
+            <div class="stat-label">Mahalliy Maqola</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Controls Bar: Search & Category Filter -->
+    <section class="controls-bar">
+      <div class="search-box-wrap">
+        <svg class="search-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input type="text" id="search-input" class="search-input" placeholder="Maqola sarlavhasi, kalit so‘z yoki muallif bo‘yicha qidirish..." autocomplete="off">
+      </div>
+
+      <div class="filter-pills">
+        <button class="filter-btn active" data-filter="all">Barchasi (5)</button>
+        <button class="filter-btn" data-filter="dgu">DGU Guvohnoma</button>
+        <button class="filter-btn" data-filter="tezis">Xalqaro Tezis</button>
+        <button class="filter-btn" data-filter="maqola">Mahalliy Maqolalar</button>
+        <button class="filter-btn" data-filter="cert">Boshqa Hujjatlar</button>
+      </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="articles-grid" id="articles-container">
+
+      <!-- Item 1: DGU 53978 -->
+      <article class="article-card" data-category="dgu">
+        <div class="card-thumbnail-wrap">
+          <div class="card-overlay-badge">
+            <span class="badge badge-dgu">DGU Guvohnoma</span>
+          </div>
+          <img src="previews/dgu-53978.pdf.png" alt="DGU 53978 Guvohnoma" class="card-thumbnail" loading="lazy">
+        </div>
+        <div class="card-content">
+          <div class="card-meta-row">
+            <span class="meta-item">
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              30.07.2025
+            </span>
+            <span class="meta-item">
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              № DGU 53978
+            </span>
+          </div>
+          <h3 class="card-title">
+            <a href="dgu-53978.html">Talabalar baholarini boshqarish tizimi</a>
+          </h3>
+          <div class="card-authors">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            <span>Xudoyberdiyev I.B., Kadirov O.X., Boymurodov Ibrohimbek</span>
+          </div>
+          <p class="card-excerpt">
+            O‘zbekiston Respublikasi Adliya Vazirligi tomonidan berilgan elektron hisoblash mashinalari uchun yaratilgan dasturning rasmiy ro‘yxatdan o‘tkazilganligi to‘g‘risidagi guvohnoma. Talabnoma: DT 202506812.
+          </p>
+          <div class="card-actions">
+            <a href="dgu-53978.html" class="btn-primary">
+              Batafsil ko‘rish
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <a href="pdfs/dgu-53978.pdf" download class="btn-icon" title="PDF yuklab olish">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            </a>
+            <button onclick="copyLink(window.location.origin + window.location.pathname.replace('index.html', '') + 'dgu-53978.html', event)" class="btn-icon btn-icon-link" title="Havolani nusxalash">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 2: Ekonometrika Tezis -->
+      <article class="article-card" data-category="tezis">
+        <div class="card-thumbnail-wrap">
+          <div class="card-overlay-badge">
+            <span class="badge badge-tezis">Xalqaro Tezis</span>
+          </div>
+          <img src="previews/ekonometrika-chiziqsiz-regressiya.pdf.png" alt="Ekonometrika fanida chiziqsiz regressiya" class="card-thumbnail" loading="lazy">
+        </div>
+        <div class="card-content">
+          <div class="card-meta-row">
+            <span class="meta-item">
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              May, 2025
+            </span>
+            <span class="meta-item">
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+              4 bet
+            </span>
+          </div>
+          <h3 class="card-title">
+            <a href="ekonometrika-chiziqsiz-regressiya.html">Ekonometrika fanida chiziqsiz regressiya mavzusiga matematika statistikani qo‘llash</a>
+          </h3>
+          <div class="card-authors">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            <span>G’.A.Roziqov, Boymurodov Ibrohimbek, Z.M.Ruzanova</span>
+          </div>
+          <p class="card-excerpt">
+            Maqolada ekonometrika fanining maqsad vazifalari aytib o’tish bilan birga, chiziqsiz regressiya mavzusiga matematika statistikani qo‘llagan holda amaliy mashg‘ulot o‘tish metodikasi tahlil qilingan.
+          </p>
+          <div class="card-actions">
+            <a href="ekonometrika-chiziqsiz-regressiya.html" class="btn-primary">
+              Batafsil ko‘rish
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <a href="pdfs/ekonometrika-chiziqsiz-regressiya.pdf" download class="btn-icon" title="PDF yuklab olish">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            </a>
+            <button onclick="copyLink(window.location.origin + window.location.pathname.replace('index.html', '') + 'ekonometrika-chiziqsiz-regressiya.html', event)" class="btn-icon btn-icon-link" title="Havolani nusxalash">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 3: Pedagogik imkoniyatlar -->
+      <article class="article-card" data-category="maqola">
+        <div class="card-thumbnail-wrap">
+          <div class="card-overlay-badge">
+            <span class="badge badge-maqola">Mahalliy Maqola</span>
+          </div>
+          <img src="previews/pedagogik-imkoniyatlar.pdf.png" alt="Педагогические возможности развития навыков" class="card-thumbnail" loading="lazy">
+        </div>
+        <div class="card-content">
+          <div class="card-meta-row">
+            <span class="meta-item">
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              2025
+            </span>
+            <span class="meta-item">
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+              6 bet
+            </span>
+          </div>
+          <h3 class="card-title">
+            <a href="pedagogik-imkoniyatlar.html">Педагогические возможности для развития навыков самостоятельной работы</a>
+          </h3>
+          <div class="card-authors">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            <span>Г.А.Розиков, И.И.Боймуродов, З.М.Рузанова</span>
+          </div>
+          <p class="card-excerpt">
+            Педагогические возможности для развития навыков самостоятельной работы и междисциплинарных связей будущих инженеров. Анализ методов проектного обучения.
+          </p>
+          <div class="card-actions">
+            <a href="pedagogik-imkoniyatlar.html" class="btn-primary">
+              Batafsil ko‘rish
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <a href="pdfs/pedagogik-imkoniyatlar.pdf" download class="btn-icon" title="PDF yuklab olish">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            </a>
+            <button onclick="copyLink(window.location.origin + window.location.pathname.replace('index.html', '') + 'pedagogik-imkoniyatlar.html', event)" class="btn-icon btn-icon-link" title="Havolani nusxalash">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 4: Muhandislarda mustaqil ta'lim -->
+      <article class="article-card" data-category="maqola">
+        <div class="card-thumbnail-wrap">
+          <div class="card-overlay-badge">
+            <span class="badge badge-maqola">Mahalliy Maqola</span>
+          </div>
+          <img src="previews/muhandislikda-mustaqil-talim.pdf.png" alt="Muhandislarda mustaqil ta'lim" class="card-thumbnail" loading="lazy">
+        </div>
+        <div class="card-content">
+          <div class="card-meta-row">
+            <span class="meta-item">
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              2025
+            </span>
+            <span class="meta-item">
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+              5 bet
+            </span>
+          </div>
+          <h3 class="card-title">
+            <a href="muhandislikda-mustaqil-talim.html">Amaliy ish bajarish orqali muhandislarda mustaqil ta’limni rivojlantirish imkoniyatlari</a>
+          </h3>
+          <div class="card-authors">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            <span>G’.A.Roziqov, Boymurodov Ibrohimbek, Z.M.Ruzanova</span>
+          </div>
+          <p class="card-excerpt">
+            Ushbu maqolada muhandislik ta’limida amaliy ishlarning o‘rni va ahamiyati keng tahlil qilinadi. Amaliy mashg‘ulotlar orqali talabalar nazariy bilimlarni mustahkamlaydi.
+          </p>
+          <div class="card-actions">
+            <a href="muhandislikda-mustaqil-talim.html" class="btn-primary">
+              Batafsil ko‘rish
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <a href="pdfs/muhandislikda-mustaqil-talim.pdf" download class="btn-icon" title="PDF yuklab olish">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            </a>
+            <button onclick="copyLink(window.location.origin + window.location.pathname.replace('index.html', '') + 'muhandislikda-mustaqil-talim.html', event)" class="btn-icon btn-icon-link" title="Havolani nusxalash">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 5: Xudoynazarov Murad -->
+      <article class="article-card" data-category="cert">
+        <div class="card-thumbnail-wrap">
+          <div class="card-overlay-badge">
+            <span class="badge badge-cert">Sertifikat</span>
+          </div>
+          <img src="previews/xudoynazarov-murad.pdf.png" alt="Murad Xudoynazarov SIELE Sertifikati" class="card-thumbnail" loading="lazy">
+        </div>
+        <div class="card-content">
+          <div class="card-meta-row">
+            <span class="meta-item">
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              12.10.2026
+            </span>
+            <span class="meta-item">
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+              2 bet
+            </span>
+          </div>
+          <h3 class="card-title">
+            <a href="xudoynazarov-murad.html">SIELE Xalqaro Malaka Sertifikati — Murad Xudoynazarov</a>
+          </h3>
+          <div class="card-authors">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            <span>Murad Xudoynazarov (SIELE)</span>
+          </div>
+          <p class="card-excerpt">
+            Servicio Internacional de Evaluación de la Lengua Española (SIELE) sertifikati hujjati. Tekshiruv kodi: NxjsMBPLHxYgIeWJVEOl78==.
+          </p>
+          <div class="card-actions">
+            <a href="xudoynazarov-murad.html" class="btn-primary">
+              Batafsil ko‘rish
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <a href="pdfs/xudoynazarov-murad.pdf" download class="btn-icon" title="PDF yuklab olish">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            </a>
+            <button onclick="copyLink(window.location.origin + window.location.pathname.replace('index.html', '') + 'xudoynazarov-murad.html', event)" class="btn-icon btn-icon-link" title="Havolani nusxalash">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <div id="no-results" style="display: none; text-align: center; padding: 60px 20px; color: var(--text-muted);">
+      <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="margin: 0 auto 16px auto; opacity: 0.5;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <h3>Hech narsa topilmadi</h3>
+      <p>Iltimos, boshqa qidiruv so‘zini kiriting yoki filtrni bekor qiling.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Boymurodov Ibrohimbek Iskandar o‘g’li. Barcha huquqlar himoyalangan.</p>
+      <p style="margin-top: 6px; font-size: 0.8rem;">Nizomiy nomidagi Toshkent Davlat Pedagogika Universiteti</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
